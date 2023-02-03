@@ -1,0 +1,7 @@
+/* Ex.1: Colocar o texto de todos os paragráfos (elemento p) de 
+classe 'paragrafo-padrao' e que estão dentro de alguma seção 
+(elemento section) na cor azul. */
+
+section p.paragrafo-padrao {
+  color: blue;
+}

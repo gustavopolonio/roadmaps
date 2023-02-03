@@ -1,0 +1,38 @@
+/* EXEMPLO 1 */
+.exemplo1 .titulo-secundario.cor-vermelho {
+  color: red;
+}
+
+.exemplo1 .titulo-secundario {
+  color: blue;
+}
+
+
+/* EXEMPLO 2 */
+.exemplo2 h2 {
+  color: pink;
+}
+
+.exemplo2 h2 {
+  color: black;
+}
+
+
+/* EXEMPLO 3 */
+div .titulo-secundario {
+  color: green;
+}
+
+.titulo-secundario.cor-amarelo {
+  color: yellow;
+}
+
+
+/* EXEMPLO 4 */
+.exemplo4 h2 {
+  color: gray !important;
+}
+
+div.exemplo4 h2.titulo-secundario.cor-vermelho {
+  color: red;
+}
