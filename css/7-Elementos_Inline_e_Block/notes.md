@@ -6,15 +6,15 @@ Os elementos HTML podem ser do tipo inline, block ou inline-block
 ## Diferenças entre inline e block
 
 1. Inline: 
-- Elemento ocupa somente a largura do seu conteúdo
 - Não começam em uma nova linha (2 ou mais elementos inline ficam na mesma linha, um ao lado do outro)
+- Elemento ocupa somente a largura do seu conteúdo
 - Não é possível definir largura e altura (com as propriedades width e height)
 - Margin e padding verticais (top e bottom) não têm efeito
 - Elementos inline mais usados: `span, strong, a, *img`
 
 2. Block:
-- Elemento ocupa toda a largura disponível do seu elemento pai
 - Começam em uma nova linha (um elemento block fica sozinho em uma linha)
+- Elemento ocupa toda a largura disponível do seu elemento pai
 - É possível definir largura e altura (com as propriedades width e height)
 - Margin e padding funcionam normalmente
 - Elementos block mais usados: `h1…h6, div, form, header, footer, main, p, section, table, ul`

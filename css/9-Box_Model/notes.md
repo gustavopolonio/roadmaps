@@ -5,10 +5,9 @@ Box Model = Modelo de Caixa => Modelo que os navegadores representam os elemento
 Ex.1: Mostrar no DevTools o formato de caixa que esses elementos HTML são representados.
 
 
-> Obs: A maioria dos elementos HTML têm estilizações padrões, por exemplo `h1` tem margens em cima e embaixo (mostrar no DevTools).
-
-
 Todas essas caixas, ou seja, todos os elementos HTML são compostos por 4 partes (4 camadas ou 4 áreas) - Abrir e analisar Imagem 1
+
+> Obs: A maioria dos elementos HTML têm estilizações padrões, por exemplo `h1` tem margens em cima e embaixo (mostrar no DevTools).
 
 *As 4 partes são:*
 
@@ -42,6 +41,12 @@ Ex.2.1: Aplicar padding no `h1` e ver o box model no DevTools
     /* top | right e left | bottom */
     /* padding: 16px 32px 8px 32px; */
     padding: 16px 32px 8px;
+
+    /* Apenas em um lado */
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
   }
 
 ```
@@ -78,7 +83,7 @@ Ex.4: Aplicar padding e border no `h1` e ver se a largura e altura que passei pa
 
 Isso acontece porque por padrão todos os elementos HTML: `box-sizing: content-box`. O nome da propriedade já diz tudo: o tamanho da caixa (do elemento) será aplicado na parte do content. Ou seja, o width e height definem apenas o tamanho do conteúdo do elemento. Sendo assim, o tamanho total do elemento será: `width + padding + border`
 
-Esse comportamento é ruim na maioria dos casos, já que quando tenho um layout pronto, sei exatamente o tamanho que cada elemento deve ocupar. E não quero ficar fazendo cálculo entre o width, padding e border para saber o tamanho total ocupado pelo elemento.
+Esse comportamento é ruim na maioria dos casos, já que quando tenho um layout pronto, sei exatamente o tamanho que cada elemento deve ocupar. Por isso, quero que o `width` e `height` que eu passe pra elemento seja o tamanho total dele.
 
 Para resolver isso, passamos o valor: `box-sizing: border-box`, para que o tamanho (width e height) que eu passar para um elemento seja aplicado até a parte da borda dele, ou seja, o tamanho vai incluir as partes do conteúdo, do padding e da borda. Sendo assim, o tamanho total do elemento será os valores do width e do height.
 
@@ -102,5 +107,4 @@ Em quase todos os projetos colocamos estilizações iniciais para os elementos (
 Seletor all: * => Todos os elementos terão o comportamento `border-box` e zeramos a margin e o padding de todos os elementos para facilitar a estilização.
 
 
-
-> Resumo: O padding é o preenchimento interno do elemento, ou seja, nós podemos criar um espaço extra dentro do elemento. A borda já é auto explicativa, é para colocar uma borda no elemento. E a margin é a parte de fora do elemento, para espaçar os elementos um do outro, criando um espaço extra fora do elemento.
+> Resumo: O padding é o preenchimento interno do elemento, ou seja, nós podemos criar um espaço extra dentro do elemento. A borda já é auto explicativa, é para colocar uma borda no elemento. E a margin é a parte de fora do elemento, para espaçar os elementos um do outro, criando um espaço extra fora do elemento.`box-sizing: border-box` => faz o elemento ter exatamente a largura e altura que defirnirmos para ele.
