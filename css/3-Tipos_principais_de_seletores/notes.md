@@ -93,7 +93,7 @@ Usando sinal de hashtag (#) seguido pelo nome do ID:
 
 ```
 
-> Como o ID deve ser único para cada elemento, não podemos fazer o Ex.1 dos 3 botões (reaproveitando código) usando ID's como seletores
+> Como o ID deve ser único para cada elemento, não podemos fazer o Ex.2 dos 3 botões (reaproveitando código) usando ID's como seletores
 
 Ex.2.1: Criar os mesmos 3 botões do exercício passado usando ID's como seletores.
 
