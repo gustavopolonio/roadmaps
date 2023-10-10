@@ -77,7 +77,7 @@ Ex.3: Colocar as propriedades do box model apenas na 1a div e comparar com a 2a.
 
 
 ## Propriedade box-sizing
-Quando defino uma largura (width) e uma altura (height) pro elemento, esses valores variam de acordo com o padding e border que passo.
+Quando defino uma largura (width) e uma altura (height) para o elemento, esses valores variam de acordo com o padding e border que passo.
 
 Ex.4: Aplicar padding e border no `h1` e ver se a largura e altura que passei para ele mudam.
 

@@ -1,0 +1,24 @@
+.flex-container {
+  /* display: flex; */
+}
+
+.flex-item {
+  width: 100px;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+
+.flex-item-1 {
+  min-height: 50px;
+  background-color: #f64f4f;
+}
+
+.flex-item-2 {
+  min-height: 100px;
+  background-color: #5ec75e;
+}
+
+.flex-item-3 {
+  min-height: 150px;
+  background-color: #6767e9;
+}

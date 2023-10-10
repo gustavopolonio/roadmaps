@@ -66,8 +66,7 @@ Usando um ponto (.) seguido pelo nome da classe:
 *Por que as classes são os tipos de seletores mais utilizados ?*
 Elas são ótimas para criar códigos reutilizáveis.
 
-Ex.2: Criar 3 botões com a mesma largura e mesma altura, sem duplicar código CSS. Cada
-botão deve ter uma cor de fundo única.
+Ex.2: Criar 3 botões com a mesma largura e mesma altura, sem duplicar código CSS. Cada botão deve ter uma cor de fundo única.
 
 
 ## ID
