@@ -1,0 +1,17 @@
+ul {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .titulo {
+    color: red;
+  }
+
+  .botao {
+    display: none;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+}

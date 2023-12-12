@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, button, input, textarea {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+
+.main-header {
+  background-image: url("images/background-image.png");
+  background-position: 50% 39%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  padding: 16px 0;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item a {
+  color: white;
+  text-transform: uppercase;
+
+  transition: 0.2s;
+}
+
+.nav-item a:hover {
+  opacity: 0.7;
+}
+
+.movie-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  font-size: 64px;
+  font-family: 'Rock Salt', cursive;
+}
+
+/* main */
+main {
+  margin: 48px 0;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  float: left;
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+
+.description + .description {
+  margin-top: 16px;
+}
+
+footer {
+  background-color: #aa0505;
+  padding: 16px 0;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  font-family: 'Rock Salt', cursive;
+  color: white;
+  font-size: 24px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 636px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .banner {
+    float: unset;
+    margin-bottom: 20px;
+  }
+
+  main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
