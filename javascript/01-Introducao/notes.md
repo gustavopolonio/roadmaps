@@ -75,7 +75,7 @@ O JS, assim como todas as outras linguagens, aceita instruções matemáticas pa
 
   <html>
     <head>
-      <script src="index.js"></script>
+      <script async src="index.js"></script>
     </head>
     <body></body>
   </html>
