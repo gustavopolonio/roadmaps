@@ -1,6 +1,7 @@
 # JavaScript: A linguagem de programação mais usada atualmente!
 
-É possível escrever código JS diretamente no navegador. Na aba `console` do inspecionar elementos. Brincar com `console.log()`
+É possível escrever código JS diretamente no navegador. O V8 é um mecanismo que foi criado pelo Google para executar JavaScript nos navegadores Chrome (2008). Com o passar do tempo, o V8 foi adotado pelos demais navegadores, para o mesmo princípio. Na aba `console` do inspecionar elementos. Brincar com `console.log()`.
+Além disso, o V8 também é utilizado para executar JavaScript em outros ambientes, por exemplo no Node.js
 
 
 ## Cálculos Aritméticos
