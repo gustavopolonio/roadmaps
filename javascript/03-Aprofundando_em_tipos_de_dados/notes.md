@@ -240,3 +240,62 @@
   console.log(text.startsWith('O Bra'))  // true
 
 ```
+
+
+# Casting: converter um tipo de dado para outro tipo de dado
+
+1.1) String para Int
+```js
+
+  const numString = '10'
+  const numInt = parseInt(numString)
+
+  console.log(typeof numString)  // string
+  console.log(numString)  // 10
+  console.log(typeof numInt)  // number
+  console.log(numInt)  // 10
+
+  // OU
+
+  const numString = '10'
+  const numInt = Number(numString)
+
+  console.log(typeof numString)  // string
+  console.log(numString)  // 10
+  console.log(typeof numInt)  // number
+  console.log(numInt)  // 10
+
+```
+
+1.2) String para Float
+```js
+
+  const numString = '10.2'
+  const numFloat = parseFloat(numString)
+
+  console.log(typeof numString)  // string
+  console.log(numString)  // 10.2
+  console.log(typeof numFloat)  // number
+  console.log(numFloat)  // 10.2
+
+  // OU
+
+  const numString = '10.2'
+  const numFloat = Number(numString)
+
+  console.log(typeof numString)  // string
+  console.log(numString)  // 10.2
+  console.log(typeof numFloat)  // number
+  console.log(numFloat)  // 10.2
+
+```
+
+2.3) Float para Int
+```js
+
+  let numFloat = 9.81
+  let numInt = parseInt(numFloat)
+
+  console.log(numInt)  // 9
+
+```
