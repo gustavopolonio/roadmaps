@@ -17,7 +17,7 @@
 > Obs: Até agora sempre vimos que o código é executado de cima para baixo, da esquerda para a direita. No entanto, podemos mudar esse fluxo com o if (por exemplo, podemos não executar o que está dentro do if)
 
 > Obs2: Lembrando o que são considerados valores true e false no JS:
-<!-- Truthy values -->
+<!-- Truthy values (valores verdadeiros) -->
 * Todos os números (positivos e negativos) são true, exceto o zero
 * Todas as strings são true, exceto as strings vazias ('')
 
@@ -56,7 +56,7 @@
   const num = 0
 
   if (num === 0) {
-    console.log('É positivo!')
+    console.log('É zero!')
   } else if (num === 1) {
     console.log('É um!')
   } else if (num === 2) {

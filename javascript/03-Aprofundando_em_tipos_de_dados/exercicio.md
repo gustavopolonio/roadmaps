@@ -14,7 +14,7 @@
 
 8) Quebre a variável `challenge` em todos os espaços que ela tiver (a resposta final deve ser um array)
 
-9) Muda o texto da variável `challenge` de '30 Days Of JavaScript' para '30 Days Of Python'
+9) Mude o texto da variável `challenge` de '30 Days Of JavaScript' para '30 Days Of Python'
 
 10) Qual é o caracter da posição 15 do texto '30 Days Of JavaScript'?
 
@@ -24,4 +24,4 @@
 
 13) Qual é o index da primeira letra da primeira ocorrência da palavra 'porque' na frase: 'Gosto de estudar programação porque é divertido e porque é legal'
 
-14) Declare uma variável chamada `age` com a sua idade e uma chamada `name` com seu nome. Forme uma frase para ficar no seguinte formato: 'Oi, meu nome é {nome}. Eu tenho {age} anos.'
+14) Declare uma variável chamada `age` com a sua idade e uma chamada `firstName` com seu nome. Forme uma frase para ficar no seguinte formato: 'Oi, meu nome é {nome}. Eu tenho {age} anos.'
