@@ -45,14 +45,14 @@ Mas esse form ainda está sem muita informação pro user. Vamos indicar o que e
 ```html
 
   <form>
-    <label for="firstName">
+    <label>
       Digite seu nome
-      <input type="text" id="firstName" />
+      <input type="text" />
     </label>
 
-    <label for="age">
+    <label>
       Digite sua idade
-      <input type="number" id="age" />
+      <input type="number" />
     </label>
 
     <button type="submit">
@@ -69,7 +69,7 @@ Vamos ver alguns dos tipos mais usados de input's e algumas validações que pod
 1) Text: usado para armazenar qualquer tipo de texto (aceita letras, números e caracteres especiais)
 ```html
 
-  <input 
+  <input
     type="text"
     minlength="4"
     maxlength="10"

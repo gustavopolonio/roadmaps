@@ -24,7 +24,7 @@ Considere os seguintes casos:
   d) nota1 = 7 e nota2 = 2.1
 
 
-4) Crie um código para checar se o dia recebido é um dia de final de semana ou não
+4) Crie um código para checar se o dia recebido é um dia de final de semana ou não. Use switch.
   a) domingo
   b) terça
   c) sabádo

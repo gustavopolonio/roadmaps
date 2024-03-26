@@ -1,7 +1,3 @@
-const num = -1
+const number = -1
 
-if (num === 0) {
-  console.log('É zero!')
-} else if (num === 1) {
-  console.log('É um!')
-}
+number >= 0 ? console.log('Positivo') : console.log('Negativo')

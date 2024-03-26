@@ -177,5 +177,54 @@ O `==` apenas checa se dois valores possuem o mesmo valor. Já o `===` checa se 
 ```
 
 
+## Switch
+O `switch` é uma alternativa ao if/else. Podemos alcançar o mesmo resultado do if/else usando switch. No entanto, o switch não é tão usado. É uma boa alternativa para casos em que temos diversas condições (evita criar diversos `else if`).
 
-<!-- Switch e ternary -->
+```js
+
+  const day = 'segunda'
+
+  switch (day) {
+    case 'domingo':
+      console.log('Hoje é domingo')
+      break
+    case 'segunda':
+      console.log('Hoje é segunda')
+      break
+    case 'terça':
+      console.log('Hoje é terça')
+      break
+    case 'quarta':
+      console.log('Hoje é quarta')
+      break
+    case 'quinta':
+      console.log('Hoje é quinta')
+      break
+    case 'sexta':
+      console.log('Hoje é sexta')
+      break
+    case 'sábado':
+      console.log('Hoje é sábado')
+      break
+    default:
+      console.log('Dia inválido')
+}
+
+```
+
+> O default é o caso padrão (semelhante ao `else`)
+> Não esquecer de colocar o `break`, para sair do switch
+
+
+## Operadores ternários
+Outra maneira de escrever condicionais é usando os operadores ternários
+
+```js
+
+  const number = -1
+
+  number >= 0 ? console.log('Positivo') : console.log('Negativo')
+
+```
+
+> Temos a condição, seguida pelos pontos de interrogação e dois pontos. Se a `condição for verdadeira`: é executado o código que vem `após o ponto de interrogação`. `Senão`: é executado o código que vem `depois dos dois pontos`
