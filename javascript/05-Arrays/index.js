@@ -1,3 +1,4 @@
-const test = ['7']
+const webTechs = ['HTML', 'CSS', 'JavaScript', 'React']
 
-console.log(test.includes(7))
+webTechs.sort()
+console.log(webTechs)  // [ 'CSS', 'HTML', 'JavaScript', 'React' ]
