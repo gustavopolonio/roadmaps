@@ -1,3 +1,5 @@
-for (let i = 0; i <= 100; i++) {
-  console.log(i)
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+
+for (const country of countries) {
+  console.log(country.toUpperCase())
 }
