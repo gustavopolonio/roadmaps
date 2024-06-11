@@ -41,7 +41,7 @@ https://github.com/sudheerj/reactjs-interview-questions/blob/master/README.md#wh
   ```
 
 # 5 - O que são componentes puros?
-
+Componente puro só será renderizado novamente se as props ou os estados mudarem. Ele evita renderizações desnecessárias. Podemos atingir isso com o React.memo
   
 # 6 - O que é estado no React?
   
@@ -102,28 +102,30 @@ https://github.com/sudheerj/reactjs-interview-questions/blob/master/README.md#wh
 
 # Fale mais do useEffect?
 
-  Effects permitem um componente se conectar e sincronizar com sistemas externos (network, browser DOM). 
+  É um dos hooks mais importantes do React, que permite executar efeitos colaterais em componentes funcionais. Então, o useEffect permite, por exemplo, executar um pedaço de código sempre que alguma dependência alterar de valor ou fazer uma chamada para API quando o componente montar.
 
 # O que é Virtual DOM?
 
   A virtual DOM é um conceito implementado por lib's e não pelos navegadores.
   Ao desenvolver apliações com HTML, é por meio da DOM que podemos manipular os elementos dele. Porém, cada acesso à DOM leva um tempo e cada alteração obriga o navegador a renderizar novamente a parte alterada. Então, quanto mais coisas precisam ser atualizadas, menor será a performance.
-  Já a virtual DOM é uma representação da DOM mantida em memória. Assim, as alterações são feitas na virtual DOM, e é feita uma sincronização entre a virtual DOM e DOM real (reconciliação), fazendo com que haja o menor número possível de acessos ao DOM, melhorando a performance das aplicações.
+  Já a virtual DOM é uma representação da DOM mantida em memória. Assim, as alterações são feitas na virtual DOM, e é feita uma sincronização entre a virtual DOM e DOM real (reconciliação), fazendo com que haja o menor número possível de acessos ao DOM real, melhorando a performance das aplicações.
 
 
 # SSR x SPA?
-  Server side rendering: o servidor recebe a requisição feita pelo usuário (browser). O server tem o back e o front, ele cria a página inteira (html, css e js) e devolve ela pronta para o browser. Bom para SEO (indexa a página antes de ser carregada no browser).
-
-  Single page application (React): quando o usuário faz uma req, o back busca no db os dados pedidos, mas não é mais responsável por construir a tela. O back retorna no formato JSON (estrutura de dados para transmitir dados entre fonte e destino) apenas os dados necessários para construir a tela. O app front (React) transforma esses dados JSON em html, css e js.
+  Single page application (React): tipo de aplicação web que carrega uma única página html, e em vez de carregar páginas novas inteiras no servidor para cada interação do usuário, atualiza dinamicamente o conteúdo da página.
+   quando o usuário faz uma req, o back busca no db os dados pedidos, mas o back não é mais responsável por construir a tela. O back retorna no formato JSON (estrutura de dados para transmitir dados entre fonte e destino) apenas os dados necessários para construir a tela. O app front (React) transforma esses dados JSON em html, css e js.
+  
+  Server side rendering (Next): o servidor recebe a requisição feita pelo usuário (browser). O server tem o back e o front, ele cria a página inteira (html, css e js) e devolve ela pronta para o browser. Bom para SEO (indexa a página antes de ser carregada no browser).
+  
 
 # Imutabilidade no React
 
   É uma boa prática não mutar as variáveis, ou seja, não alterar o valor delas na memória. É melhor criar um novo espaço na memória. 
-  Isso gera mais performance: React fica analisando se um valor mudou ou não, então é melhor criar um novo valor na memória e comparar com o valor passado.
+  Isso gera mais performance: no algoritmo de reconciliação, baseado na virtual DOM, o React fica analisando se um valor mudou ou não para ver quais partes do app precisam ser atualizadas. Então é melhor criar um novo valor na memória e comparar com o valor passado.
 
 # Closures no React
 
-  Se eu tenho um estado que armazena um valor numérico e uso a função setState para atualizar o valor dessa variável 3x seguidas, o valor dela será aumentado em apenas 1, pois as 3 chamadas para a setState estão acontecendo no mesmo contexto (o componente não foi renderizado após a 1a execução da setState).
+  Se eu tenho um estado que armazena um valor numérico e uso a função setState para atualizar o valor dessa variável 3x seguidas, o valor dela será aumentado em apenas 1, pois as 3 chamadas para a setState estão acontecendo no mesmo contexto (o componente não foi re-renderizado após a 1a execução da setState).
   Solução: para atualizar uma variável de estado que depende do valor que essa variável tinha anteriormente (ex: um contador), eu passo uma função como 1o parâmetro da setState e capturo o valor mais recente desse estado.
 
   ```js
