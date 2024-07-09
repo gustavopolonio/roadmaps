@@ -44,7 +44,7 @@ Exemplo com decremento da variável:
 Exemplo colocando todas as palavras de um array em letra maiúscula:
 ```js
 
-  const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+  const countries = ['Finland', 'Sweden', 'Denmark', 'Norway']
   const newArr = []
   for (let i = 0; i < countries.length; i++) {
     newArr.push(countries[i].toUpperCase())
@@ -52,7 +52,7 @@ Exemplo colocando todas as palavras de um array em letra maiúscula:
 
   console.log(newArr) // ["FINLAND", "SWEDEN", "DENMARK", "NORWAY", "ICELAND"]
 
-  // Perceba que podemos usar as varioáveis criadas fora do loop
+  // Perceba que podemos usar as variáveis criadas fora do loop
 
 ```
 

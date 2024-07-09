@@ -169,7 +169,7 @@ As funções podem retornar um valor. Se uma função não retorna um valor, o v
 ```
 
 
-2) Arrow functions
+2) Arrow functions - função feita na forma de Flecha
 Arrow function é uma alternativa para declarar uma função. Ela funciona praticamente igual à função criada do jeito tradicional (têm algumas diferenças que não importam agora). A única diferença que veremos é o modo de declarar:
 
 ## A mesma função declarada do modo tradicional e com arrow function
@@ -287,10 +287,3 @@ Obs: para executar uma fç anônima é necessário armazená-la numa variável. 
 
 > Obs: posso definir valores default para os param em todos os 3 tipos de fçs que vimos
 
-
-
-
-
-escopo de fç
-
-Exercicios
