@@ -73,7 +73,7 @@ Considere o array 'products' abaixo para o exercício 6:
       description: 'Smart TV:Procaster',
       price: 400,
       ratings: [],
-      likes: ['fg12cy' 'zwf8md']
+      likes: ['fg12cy', 'zwf8md']
     }
   ]
 

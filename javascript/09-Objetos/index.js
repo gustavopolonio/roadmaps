@@ -1,30 +1,20 @@
-const users = {
-  Asab: {
-    email: 'asab@asab.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-    age: 25,
-    isLoggedIn: false,
-    points: 50
-  },
-  Brook: {
-    email: 'daniel@daniel.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
-    age: 30,
-    isLoggedIn: true,
-    points: 50
-  },
+const pessoa = {
+  nome: 'Daniel',
+  sobrenome: 'Afonso',
+  idade: 20,
+  irmaos: ['Pedro', 'Raul'],
+  fazFaculdade: true
 }
 
-const pessoa2 = Object.assign({
-  Gugs: {
-    email: 'asab@asab.com',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-    age: 25,
-    isLoggedIn: false,
-    points: 50
-  },
-}, users)
+const aaa = Object.keys(pessoa)
+const bbb = Object.values(pessoa)
 
-console.log(users)
-console.log('///////////////')
-console.log(pessoa2)
+const entriesVar = Object.entries(pessoa)
+
+// console.log(aaa) 
+// console.log(bbb)
+
+// console.log(entriesVar[4])
+for (var i = 0; i < entriesVar.length; i++) {
+  console.log(entriesVar[i])
+}
