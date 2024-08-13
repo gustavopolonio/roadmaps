@@ -337,7 +337,69 @@ Usando o reduce para retornar um objeto no final:
 ```
 
 
-
-
-
 # Setting time
+No JavaScript podemos executar alguma atividade repetidamente a cada intervalo de tempo (ex: executar uma função a cada 5 segundos) usando `setInterval`. Também é possível setar um cronômetro para executar uma atividade uma única vez quando o tempo expirar (ex: executar uma função daqui 10 segundos) usando `setTimeout`.
+
+## setInterval
+setInterval é uma HOF que executa alguma atividade repetidamente a cada intervalo de tempo. Ela recebe dois parâmetros: a fç de callback que será executada repetidamente e o intervalo (em milissegundos).
+
+```js
+
+  function sayHello() {
+    console.log('Hello')
+  }
+
+  setInterval(sayHello, 1000)  // 1000ms = 1 segundo
+
+```
+
+A setInterval retorna um interval ID, que é um ID único que identifica esse intervalo. Com esse ID, podemos parar a execução desse intervalo, usando o clearInterval:
+
+
+```js
+
+  function sayHello() {
+    console.log('Hello')
+  }
+
+  const intervalId = setInterval(sayHello, 1000)  // 1000ms = 1 segundo
+
+  // if (condition) {
+  //   clearInterval(intervalId)
+  // }
+
+```
+
+
+## setTimeout
+setTimeout é uma HOF que seta um cronômetro para executar uma fç uma única vez quando o tempo expirar. Ela recebe dois parâmetros: a fç de callback que será executada e a duração do cronômetro (em milissegundos).
+
+```js
+
+  setTimeout(() => {
+    console.log("Mensagem depois de 5 segundos");
+  }, 5000);
+
+  setTimeout(() => {
+    console.log("Mensagem depois de 3 segundos");
+  }, 3000);
+
+  setTimeout(() => {
+    console.log("Mensagem depois de 1 segundo");
+  }, 1000);
+
+```
+
+A setTimeout retorna um timeoutID, que é um ID único que identifica esse timeout. Com esse ID, podemos parar a cancelar esse timeout, usando o clearTimeout:
+
+```js
+
+  const timeoutID = setTimeout(() => {
+    console.log("Mensagem depois de 4 segundos");
+  }, 4000);
+
+  if (true) {
+    clearTimeout(timeoutID)
+  }
+
+```
