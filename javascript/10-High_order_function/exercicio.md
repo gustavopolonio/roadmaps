@@ -14,10 +14,10 @@ Considere os dois arrays abaixo
 ```
 
 
-1) Ùse forEach para mostrar na tela (console.log) cada nome do array names.
+1) Use forEach para mostrar na tela (console.log) cada nome do array names.
 
 
-2) Ùse forEach para mostrar na tela (console.log) cada número do array numbers.
+2) Use forEach para mostrar na tela (console.log) cada número do array numbers.
 
 
 3) Use map para criar um novo array com os nomes do array names em maiúsculo.
@@ -53,10 +53,10 @@ Considere os dois arrays abaixo
 13) Use find para encontrar o primeiro nome que tem mais do que 4 letras.
 
 
-14) Use findIndes para encontrar o index do primeiro nome que tem mais do que 4 letras.
+14) Use findIndex para encontrar o index do primeiro nome que tem mais do que 4 letras.
 
 
-15) Use qualquer métodos para verificar se no array names tem o nome 'José'.
+15) Use qualquer método para verificar se no array names tem o nome 'José'.
 
 
 16) Use sort para colocar os números do array abaixo em orderm crescente:
