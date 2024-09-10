@@ -1,5 +1,9 @@
-const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+const user = {
+  name:'Asabeneh',
+  title:'Programmer',
+  country:'Finland',
+  city:'Helsinki'
+}
 
-const [studentName, skills, scores] = student
-
-console.log(studentName, skills.length, scores[2], scores[3])
+const copiedUser = {...user, name: 'Joao', age: 20}
+console.log(copiedUser)

@@ -45,15 +45,15 @@ const users = [
 2) Desestruture o objeto `rectangle` armazenando cada propriedade numa variável
 
 
-3) Itere pelo array `users` e armazene todas as propriedades de cada user nume variável (usando desestruturação)
+3) Itere pelo array `users` e armazene todas as propriedades de cada user numa variável (usando desestruturação)
 
 
-4) Usando o array `users`, crie um novo array que contenha apenas o users que tenham mais do que 2 skills (use qualquer método)
+4) Usando o array `users`, crie um novo array que contenha apenas os users que tenham mais do que 2 skills (use qualquer método)
 
 
 ```js
 
-  const student = ['David', ['HTM', 'CSS', 'JavaScript', 'React'], [98, 85, 90, 95]]
+  const student = ['David', ['HTML', 'CSS', 'JavaScript', 'React'], [98, 85, 90, 95]]
 
 ```
 
