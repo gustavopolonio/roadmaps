@@ -85,7 +85,7 @@ Pega o 1o elemento que tenha o ID informado. Retorna o elemento encontrado ou nu
 ```
 
 4) querySelector()
-O querySelector pode pegar elementos por meio do nome da tag, pela classe ou pelo ID. A estrutura é semelhante a selecionar elementos no CSS.
+O querySelector pode pegar elementos por meio do nome da tag, pela classe ou pelo ID. A estrutura é semelhante a estilizar elementos no CSS.
 Retorna o 1o elemento encontrado ou nulo.
 
 ```js
@@ -117,7 +117,7 @@ Combinando seletores (igual no css):
 ```
 
 5) querySelectorAll()
-O querySelectorAll pode pegar elementos por meio do nome da tag, pela classe ou pelo ID. A estrutura é semelhante a selecionar elementos no CSS.
+O querySelectorAll pode pegar elementos por meio do nome da tag, pela classe ou pelo ID. A estrutura é semelhante a estilizar elementos no CSS.
 Retorna uma nodeList com todos os elementos encontrados. Uma nodeList é um array like object que suporta for loop tradicional e forEach.
 
 ```js
@@ -134,3 +134,154 @@ Retorna uma nodeList com todos os elementos encontrados. Uma nodeList é um arra
   allTitle.forEach(title => console.log(title))
 
 ```
+
+
+## Adicionando atributos
+Podemos adicionar atributos a um elemento que pegamos no javascript. Atributos mais usados do HTML: id, class, src, style, href, disabled, title, alt.
+
+> Obs: do modo abaixo os atributos são sobrescritos se já existirem
+
+```js
+
+  const h1 = document.querySelectorAll('h1')
+  const h2 = document.querySelector('h2.title')
+  const button = document.querySelector('button')
+  const img = document.querySelector('img')
+
+  h2.id = 'id-teste'  // Sobrescreve o id do h2, se o h2 não tiver id...
+  h2.className = 'classe-teste'
+  h2.style = 'color: red; font-size: 20px'
+
+  button.disabled = true
+
+  img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png'
+  img.alt = 'Alt teste'
+
+  h1[1].style = 'color: green'
+
+```
+
+
+### Adicionando atributos com o método setAttribute()
+Sobrescreve o valor de um atributo, se ele já existir. Senão, cria um novo atributo.
+
+```js
+
+  // Sintaxe
+  setAttribute('nomeDoAtributo', 'valorDoAtributo')
+
+```
+
+```js
+
+  const h1 = document.querySelectorAll('h1')
+  const h2 = document.querySelector('h2.title')
+  const button = document.querySelector('button')
+  const img = document.querySelector('img')
+
+  h2.setAttribute('id', 'id-teste')
+  h2.setAttribute('class', 'classe-teste')
+  h2.setAttribute('style', 'color: red; font-size: 20px')
+
+  button.setAttribute('disabled', true)
+
+  img.setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png')
+  img.setAttribute('alt', 'Alt teste')
+
+  h1[1].setAttribute('style', 'color: green')
+
+```
+
+> É recomendado usar o `setAttribute` ao invés do 1o modo visto.
+
+
+### Adicionando classes com o método add
+O método `add` adiciona uma nova classe ao elemento. Importante: esse método não sobrescreve as classes já existentes.
+
+```js
+
+  const button = document.querySelector('button')
+  button.classList.add('outra-classe')
+
+```
+
+
+### Removendo classes com o método remove
+O método `remove` remove a classe especificada do elemento.
+
+```js
+
+  const button = document.querySelector('button')
+  button.classList.remove('button')
+
+```
+
+
+### Método toggle para manipular classes
+O método toggle checa se o elemento possui ou não a classe especificada. Se possuir, a classe é removida. Senão, a classe é adicionada.
+
+```js
+
+  const button = document.querySelector('button')
+  button.classList.toggle('button')  // O button tem a classe 'button', então ela é removida
+  button.classList.toggle('classe-teste')  // O button não tem a classe 'classe-teste', então ela é adicionada
+
+```
+
+
+### Adicionando texto num elemento com o textContent
+Podemos adicionar/alterar o texto exibido em tela de um elemento usando o textContent:
+
+```js
+
+  const button = document.querySelector('button')
+  button.textContent = 'Texto'
+
+```
+
+
+### Adicionando texto num elemento com o innerHTML
+Assim como o textContent, o innerHTML também pode adicionar texto num elemento. Mas, além disso, o innerHTML também pode adicionar elementos HTML.
+
+```js
+
+  const button = document.querySelector('button')
+  button.innerHTML = 'Texto'  // Adicionando texto normal
+
+```
+
+```js
+
+  // Adicionando elementos html
+  const button = document.querySelector('button')
+  button.innerHTML = `
+    <span>Span 1</span>
+    <a>Link</a>
+    <span>Span 2</span>
+  `
+
+```
+
+O innerHTML também pode ser utilizado para remover todos os elementos filhos do elemento selecionado:
+
+```js
+
+  const div = document.querySelector('.div')
+  div.innerHTML = ''
+
+```
+
+
+### Adicionando estilos num elemento com o style
+Como vimos acima, podemos adicionar vários estilos de uma vez (no formato de CSS) usando o `style` ou o `setAttribute('style', 'color: red; font-size: 20px')`
+
+Mas também é possível adicionar propriedades específicas do CSS:
+
+```js
+
+  const h1 = document.querySelectorAll('h1')
+  h1.forEach(element => element.style.fontSize = '50px')
+
+```
+
+> Obs: repare que, aqui no javascript, as propriedades CSS são em cammelCase
