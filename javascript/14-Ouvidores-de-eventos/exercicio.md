@@ -1,0 +1,26 @@
+### Pré exercícios
+Crie um arquivo `index.html`.
+
+1)
+Usando HTML: Crie um formulário no arquivo `index.html` com um input texto e um botão de enviar.
+Usando JS: Se o input de texto estiver vazio: impeça o envio do formulário e exiba uma mensagem de erro abaixo do formulário.
+
+
+2)
+Usando HTML: Crie um formulário no arquivo `index.html` com um input texto.
+Usando JS: Exiba abaixo do input o número de caracteres que o input tem. A cada vez que um caracter for adicionado ou removido a contagem deve atualizar automaticamente.
+
+
+3)
+Usando HTML: Crie uma área de texto (textarea).
+Usando JS: Exiba no console a tecla que o usuário pressionou. Se a tecla pressionada for "Enter", exiba uma mensagem dizendo "Enter foi pressionado".
+
+
+4)
+Usando HTML: Crie um botão com o texto "Mostrar" e um parágrafo escondido com o texto "Isso é um parágrafo".
+Usando JS: Quando o botão for clicado, faça o parágrafo aparecer e altere o texto do botão para "Esconder". Se o botão for clicado novamente, o parágrafo deve desaparecer e o texto do botão volta a ser "Mostrar".
+
+
+5)
+Usando HTML: Crie 3 botões, cada um com uma cor de fundo diferente (vermelho, azul, verde).
+Usando JS: Quando um botão for clicado, mude a cor de fundo da página para a cor correspondente ao botão.
