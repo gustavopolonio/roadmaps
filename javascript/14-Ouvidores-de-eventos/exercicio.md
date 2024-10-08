@@ -19,6 +19,7 @@ Usando JS: Exiba no console a tecla que o usuário pressionou. Se a tecla pressi
 4)
 Usando HTML: Crie um botão com o texto "Mostrar" e um parágrafo escondido com o texto "Isso é um parágrafo".
 Usando JS: Quando o botão for clicado, faça o parágrafo aparecer e altere o texto do botão para "Esconder". Se o botão for clicado novamente, o parágrafo deve desaparecer e o texto do botão volta a ser "Mostrar".
+Dica: Criar 2 classes ("show" e "hide") e ficar alterando elas no parágrafo para exibir ou esconder ele.
 
 
 5)

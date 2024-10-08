@@ -13,7 +13,7 @@ Exemplo: é possível adicionar um ouvidor de eventos num botão para executar u
 
 ```
 
-> Obs: a fçCallback pode receber um parâmetro (`e`) que é o objeto do event listenter. Ele contém alguns dados, p. ex. contém o elemento selecionado (`e.target`)
+> Obs: a fçCallback pode receber um parâmetro (`e`) que é o objeto do event listenter. Ele contém alguns dados, por ex. contém o elemento selecionado (`e.target`)
 
 Adicionando um ouvidor de eventos no botão do `index.html` para dar um console.log quando clicar nele:
 
@@ -121,7 +121,7 @@ Existem diversos eventos que podem se capturados, vamos ver os principais:
   const form = document.querySelector('form')
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault()  // Por padrão o forumálrio recarrega a página quando submitado. Para evitar isso
+    e.preventDefault()  // Por padrão o formulário recarrega a página quando submitado. Para evitar isso
     // chamamos o método preventDefault
 
     const formElement = e.target
