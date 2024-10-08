@@ -13,7 +13,7 @@ Usando JS: Exiba abaixo do input o número de caracteres que o input tem. A cada
 
 3)
 Usando HTML: Crie uma área de texto (textarea).
-Usando JS: Exiba no console a tecla que o usuário pressionou. Se a tecla pressionada for "Enter", exiba uma mensagem dizendo "Enter foi pressionado".
+Usando JS: Exiba no console a tecla que o usuário pressionou (dentro do textarea). Se a tecla pressionada for "Enter", exiba uma mensagem dizendo "Enter foi pressionado".
 
 
 4)
@@ -23,5 +23,5 @@ Dica: Criar 2 classes ("show" e "hide") e ficar alterando elas no parágrafo par
 
 
 5)
-Usando HTML: Crie 3 botões, cada um com uma cor de fundo diferente (vermelho, azul, verde).
+Usando HTML: Crie 3 botões, cada um com uma cor de fundo diferente (vermelho, amarelo, verde).
 Usando JS: Quando um botão for clicado, mude a cor de fundo da página para a cor correspondente ao botão.
